@@ -166,6 +166,12 @@ p {
 	align-items: center;
 	position: relative;
 	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.general-icon-container:hover {
+	transform: scale(1.1);
 }
 
 .general-icon-container::before {
@@ -253,9 +259,10 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #fff; /* White background */
-	border-radius: 50%;
-	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+	background-color: white; /* White background */
+	/* Gradient border */
+	border: 10px solid;
+	border-image-slice: 1;
 }
 
 .computer-choice-container,
@@ -274,18 +281,28 @@ p {
 .result-container {
 	text-align: center;
 	color: #fff;
-	margin-top: 1rem;
 }
 
 .play-again-button {
 	display: none; /* Initially hidden */
 	margin-top: 2rem;
-	padding: 0.5rem 1rem;
-	background-color: #fff;
-	color: #333;
+	padding: 1rem 2rem;
+	background-color: #5bb411;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.play-again-button:hover {
+	color: #fff;
+	padding: 1.25rem 2.5rem;
+	background-color: #75f50c;
 }
 
 /* -------------------pop-up rules section starts here -------------------*/
